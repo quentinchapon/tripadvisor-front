@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(form);
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    console.log("Soumission du formulaire OK");
 
     const data = {
       firstname: document.querySelector("#firstname").value,
       lastname: document.querySelector("#lastname").value,
       email: document.querySelector("#mail").value,
-      message: document.querySelector("#message").value,
+      message: document.querySelector("#msg").value,
     };
+    console.log(data);
 
     //   console.log(data);
     const response = await axios.post(
@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(response);
 
     if (response.status === 200) {
-      alert("Merci, tout va bien");
+      alert("OKKKKKKK");
     } else {
-      alert("Une erreur est survenue");
+      alert("KOOOOOOO");
     }
   });
 });
