@@ -642,7 +642,7 @@ h4 {
   height: 30px;
 }
 
-#form {
+#contact-form {
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -655,12 +655,12 @@ h4 {
   flex-direction: column;
 }
 
-#form h2 {
+#contact-form h2 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-#form button {
+#contact-form button {
   font-family: "Roboto", sans-serif;
   color: white;
   background-color: #34e0a1;
