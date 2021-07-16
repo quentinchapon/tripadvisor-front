@@ -25,7 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(data);
 
     //   console.log(data);
-    const response = await axios.post("./", data);
+    const response = await axios.post(
+      "https://tripadvisor-clone.herokuapp.com/form",
+      data
+    );
     console.log(response);
 
     if (response.status === 200) {
