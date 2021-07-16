@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = {
       firstname: document.querySelector("#firstname").value,
       lastname: document.querySelector("#lastname").value,
-      email: document.querySelector("#email").value,
+      email: document.querySelector("#mail").value,
       message: document.querySelector("#message").value,
     };
 
