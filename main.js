@@ -34,4 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("KOOOOOOO");
     }
   });
+
+  mailgun.messages().send(data, (error, body) => {
+    console.log(body);
+    console.log(error);
+
+    if (error !== undefined) {
+      res.json({ message: "Données reçues, mail envoyé" });
+    } else {
+      res.json({ error: "An error occurred" });
+    }
+  });
 });
