@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(data);
 
     //   console.log(data);
-    const response = await axios.post("./", data);
+    const response = await axios.get("./", data);
     console.log(response);
 
     if (response.status === 200) {
