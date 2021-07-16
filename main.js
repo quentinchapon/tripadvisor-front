@@ -25,10 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(data);
 
     //   console.log(data);
-    const response = await axios.post(
-      "https://tripadvisclone.netlify.app/",
-      data
-    );
+    const response = await axios.post("/", data);
     console.log(response);
 
     if (response.status === 200) {
