@@ -28,8 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
       data
     );
 
-    console.log(`Réponse Axios : ${response}`);
-
     if (response.status === 200) {
       alert("OKKKKKKK");
     } else {
