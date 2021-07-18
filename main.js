@@ -23,10 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
       message: document.querySelector("#msg").value,
     };
     console.log(data);
-    const response = await axios.post(
-      "https://tripadvisclone.netlify.app/form",
-      data
-    );
+    const response = await axios.post("/form", data);
+
     console.log(response);
 
     if (response.status === 200) {
