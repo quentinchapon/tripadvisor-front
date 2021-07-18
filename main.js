@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(data);
     const response = await axios.post("/form", data);
 
-    console.log(response);
+    console.log(`Réponse Axios : ${response}`);
 
     if (response.status === 200) {
       alert("OKKKKKKK");
