@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     console.log(data);
     const response = await axios.post(
-      "https://tripadvisclone.netlify.app",
+      "https://tripadvisor-clone.herokuapp.com/",
       data
     );
 
